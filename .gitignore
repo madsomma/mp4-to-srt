@@ -1,8 +1,27 @@
+# Media inputs & generated subtitles (prevent committing personal audio/video)
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.srt
+*.vtt
+
+# Environment & secrets
+.env
+.env.*
+*.pem
+*.key
+*.token
+
 # Virtual environment
 .venv/
-
-# Project-specific exclusions
-GEMINI.md
+venv/
+ENV/
+env/
 
 # Python
 __pycache__/
@@ -10,7 +29,6 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -27,9 +45,30 @@ wheels/
 .installed.cfg
 *.egg
 
+# Testing & logs
+*.log
+logs/
+.pytest_cache/
+.coverage
+
+# IDEs, editors & agent tooling
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude Code local state (machine-specific paths, never shared)
+.claude/
+CLAUDE.local.md
+GEMINI.md
+
 # OS generated files
 .DS_Store
 .DS_Store?
 ._*
+.Spotlight-V100
+.Trashes
+Icon?
 Thumbs.db
 Desktop.ini
